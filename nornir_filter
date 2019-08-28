@@ -7,6 +7,7 @@ from nornir.plugins.functions.text import print_result
 
 def main():
     nr = InitNornir(config_file="nornirconfig.yaml")
+    #This filter only works for items defined in the host level construct
     nr = nr.filter(name="cisco4")
     results = nr.run(task=netmiko_send_command, command_string="show run", enable=True)
     import ipdb; ipdb.set_trace()

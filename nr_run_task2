@@ -1,0 +1,26 @@
+from nornir import InitNornir
+
+
+def main():
+    nr = InitNornir()
+    
+    for host, host_obj in nr.inventory.hosts.items():
+        print()
+        print(f"Host: {host}")
+        print("_" * 20)
+        print(f"groups: {host_obj.hostname}")
+        print(f"platform: {host_obj.platform}")
+        print(f"username: {host_obj.username}")
+        print(f"password: {host_obj.password}")
+        print(f"port: {host_obj.port}")
+        print()
+        print("-" * 20)
+    
+    
+
+
+
+
+if __name__=="__main__":
+    main()
+

@@ -6,3 +6,6 @@ inventory:
 
 core:
   num_workers: 20 
+
+
+# nr = InitNornir(config_file="inventory.yaml")

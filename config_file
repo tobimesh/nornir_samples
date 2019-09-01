@@ -9,3 +9,5 @@ core:
 
 
 # nr = InitNornir(config_file="inventory.yaml")
+
+## nr = InitNornir (inventory = {"plugin":'nornir.plugins.inventory.simple.SimpleInventory', "options": {"host-file": "inventory.yaml"}})

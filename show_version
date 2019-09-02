@@ -1,0 +1,20 @@
+#!/usr/bin/python3
+
+from nornir import InitNornir
+from nornir.plugins.tasks.networking import netmiko_send_command
+from nornir.plugins.functions.text import print_result
+
+
+def main():
+    nr = InitNornir()
+    host = "task.host"
+
+    results = nr.run(task=netmiko_send_command,
+                     command_string="show version | i IOS XE")
+    print()
+    print(host)
+    print_result(results)
+
+
+if __name__ == "__main__":
+    main()

@@ -8,6 +8,6 @@ core:
   num_workers: 20 
 
 
-# nr = InitNornir(config_file="inventory.yaml")
+# nr = InitNornir(config_file="config.yaml")
 
 ## nr = InitNornir (inventory = {"plugin":'nornir.plugins.inventory.simple.SimpleInventory', "options": {"host-file": "inventory.yaml"}})
